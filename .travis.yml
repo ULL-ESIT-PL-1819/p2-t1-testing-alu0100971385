@@ -1,8 +1,7 @@
 sudo: required
 language: node_js
 node_js:
-  - "iojs"
-  - "7"
+  - "stable"
 before_install:
   - npm i -g npm@6.5.0
   - cd databases
