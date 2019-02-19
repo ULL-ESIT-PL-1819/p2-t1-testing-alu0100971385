@@ -1,5 +1,5 @@
-# p2-t1-testing-alu0100971385
-p2-t1-testing-alu0100971385 created by GitHub Classroom
+# RESUMEN DE PRÁCTICA 2 - TDD
+Daniel Eduardo González Marrero - alu0100971385
 
 En esta práctica hemos aprendido a utilizar Node.js a transformar datos XML en JSON.
 Teniendo en cuenta que ya debíamos tener instalado NodeJS, ahora procederemos a instalar las distintas dependencias
@@ -84,18 +84,19 @@ Ahora, añadimos un nuevo test que comprueba que el id del libro que hemos cogid
 a que no hemos definido en ningún lado la variable id. Aquí entra en juego Cheerio. En el fichero parse-rdf.js debemos añadir
 lo siguiente:
 
-//aqui va la foto 10
+![testwatch](resources/10.jpg)
 
 Realizaremos estos pasos con otros atributos del libro, que serán title, authors y subjects. En el parse-rdf.js tendremos
 las definiciones de cada una de estas variables. Nos quedarían así los ficheros parse-rdf-test.js y parse-rdf.js:
 
-//aqui van 11 y 12
+![testwatch](resources/11.jpg)
+![testwatch](resources/12.jpg)
 
 Ahora crearemos un nuevo fichero dentro de databases que se llamará rdf-to-json, que cogerá un archivo rdf dentro de
 la carpeta data, donde se encuentran los .rdf de todos los libros, y sólo mostrará los datos que queremos:
 id, title, authors y subjects.
 
-//aqui va la foto 13
+![testwatch](resources/13.jpg)
 
 Elasticsearch tiene una api de bulk que permite trabajar con múltiples entradas simultáneamente. De esta manera, instalamos
 una nueva librería llamada node-dir, de la siguiente manera:
@@ -105,7 +106,7 @@ $npm install --save --save-exact node-dir@0.1.16
 Ahora podemos definir nuestro nuevo fichero rdf-to-bulk.js para poder transformar de rdf a ficheros compatibles con la API de bulk.
 El fichero nos quedaría de esta manera:
 
-//aqui va la foto 14
+![testwatch](resources/14.jpg)
 
 y al ejecutar con:
 
@@ -113,7 +114,7 @@ $node rdf-to-bulk.js ../data/cache/epub/ | head
 
 Vemos que se generan 10 líneas que han sido truncadas para que encajen en la página:
 
-//aqui va la foto 6
+![testwatch](resources/6.jpg)
 
 Ahora podemos guardar toda la salida bulk de todos los ficheros rdf en un nuevo fichero bulk_pg.ldj haciendo lo siguiente:
 
@@ -124,4 +125,4 @@ Tardará un rato, puesto que son muchísimas líneas, para más de 50.000 libros
 También configuré gulp para agilizar la ejecución de los test, asigándolo a la tarea default de gulp. De esta manera, simplemente
 ejecutando 'gulp' ya se ejecutan los test:
 
-//aqui va la foto 8
+![testwatch](resources/8.jpg)
