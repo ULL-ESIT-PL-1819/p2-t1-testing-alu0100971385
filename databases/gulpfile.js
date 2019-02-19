@@ -30,3 +30,8 @@ gulp.task("c5-get-guttenberg", shell.task(
     */
     'tar -xvjf rdf-files.tar.bz2'
 ));
+
+
+gulp.task("default", shell.task(
+    'npm test'
+));
