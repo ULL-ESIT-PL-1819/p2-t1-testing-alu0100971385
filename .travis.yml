@@ -3,4 +3,5 @@ language: node_js
 node_js:
   - "stable"
 before_install:
-  - "curl https://install.meteor.com/ | sh"
+  - npm i -g npm@6.5.0
+cache: npm
