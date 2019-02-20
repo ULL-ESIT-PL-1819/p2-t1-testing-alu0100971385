@@ -75,7 +75,7 @@ Ejecutando con npm run test:watch ocurre lo siguiente:
 
 De esta manera, cada vez que se modifica algún fichero se actualizan los test.
 
-Ahora, utilizaremos la librería Cheerio para conseguir extraer los datos de los XML de los libros y así poder
+Ahora, utilizaremos la librería Cheerio (es un parser de XML) para conseguir extraer los datos de los XML de los libros y así poder
 realizar pruebas con ellos. Para ello instalamos cheerio:
 
 $npm install --save --save-exact cheerio@0.22.0
@@ -126,3 +126,7 @@ También configuré gulp para agilizar la ejecución de los test, asigándolo a 
 ejecutando 'gulp' ya se ejecutan los test:
 
 ![testwatch](resources/8.jpg)
+
+Por último, configuramos el repo para la integración continua con Travis:
+
+[![Build Status](https://travis-ci.org/ULL-ESIT-PL-1819/p2-t1-testing-alu0100971385.svg?branch=master)](https://travis-ci.org/ULL-ESIT-PL-1819/p2-t1-testing-alu0100971385)
