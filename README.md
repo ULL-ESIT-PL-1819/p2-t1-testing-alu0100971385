@@ -15,7 +15,9 @@ de esta práctica.
 Primero descargamos los datos de los libros de la siguiente manera:
 
 $cd data
+
 $curl -O http://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.bz2
+
 $tar -xvjf rdf-files.tar.bz2	
 
 Una vez descargados y extraídos, podemos proceder a empezar con los ficheros de código fuente.
