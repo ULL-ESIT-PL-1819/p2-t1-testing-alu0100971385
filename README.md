@@ -1,6 +1,8 @@
 # RESUMEN DE PRÁCTICA 2 - TDD
 Daniel Eduardo González Marrero - alu0100971385
 
+[![Build Status](https://travis-ci.org/ULL-ESIT-PL-1819/p2-t1-testing-alu0100971385.svg?branch=master)](https://travis-ci.org/ULL-ESIT-PL-1819/p2-t1-testing-alu0100971385)
+
 En esta práctica hemos aprendido a utilizar Node.js a transformar datos XML en JSON.
 Teniendo en cuenta que ya debíamos tener instalado NodeJS, ahora procederemos a instalar las distintas dependencias
 que usaremos para transformar datos XML en JSON, desarrollando también pruebas unitarias, realizando así una
@@ -137,6 +139,4 @@ Ahora completamos el código necesario para que el test sea aceptado, añadiendo
 
 ![test2](resources/16.jpg)
 
-Por último, configuramos el repo para la integración continua con Travis:
-
-[![Build Status](https://travis-ci.org/ULL-ESIT-PL-1819/p2-t1-testing-alu0100971385.svg?branch=master)](https://travis-ci.org/ULL-ESIT-PL-1819/p2-t1-testing-alu0100971385)
+Por último, configuramos el repo para la integración continua con Travis.
